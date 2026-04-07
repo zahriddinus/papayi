@@ -43,7 +43,7 @@
         <!-- HERO -->
 
         <section class="hero">
-          <div class="container">
+          <div class="container hero__container">
             <div class="hero__left">
               <h1 class="hero__heading">
                 Start building with our APIs for absolutely free.
@@ -61,7 +61,72 @@
 
                 <button class="main-btn hero__btn">Schedule a Demo</button>
               </form>
+
+              <div class="hero__form-help">
+                <p class="hero__form-help-desc">
+                  Have any questions?
+                  <a class="hero__form-help-link" href="#">Contact Us</a>
+                </p>
+              </div>
             </div>
+
+            <picture class="hero__picture">
+              <source
+                media="(max-width: 600px;)"
+                type="image/webp"
+                srcset="
+                  ./image/telphone-mobile.webp    1x,
+                  ./image/telphone-mobile@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(max-width: 1040px)"
+                type="image/webp"
+                srcset="
+                  ./image/telphone-tablet.webp    1x,
+                  ./image/telphone-tablet@2x.webp 2x
+                "
+              />
+
+              <source
+                type="image/webp"
+                srcset="
+                  ./image/telphone-desktop.webp    1x,
+                  ./image/telphone-desktop@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(max-width: 1040px)"
+                alt="A picture of mobile phone"
+                srcset="
+                  ./image/telphone-mobile.webp    1x,
+                  ./image/telphone-mobile@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(max-width: 1040px)"
+                alt="A picture of mobile phone"
+                srcset="
+                  ./image/telphone-tablet.png    1x,
+                  ./image/telphone-tablet@2x.png 2x
+                "
+              />
+
+              <img
+                class="hero__img"
+                src="./image/telphone-desktop.png"
+                srcset="
+                  ./image/telphone-desktop.png    1x,
+                  ./image/telphone-desktop@2x.png 2x
+                "
+                alt="A picture of mobile phone"
+                width="450"
+                height="500"
+              />
+            </picture>
           </div>
         </section>
       </div>

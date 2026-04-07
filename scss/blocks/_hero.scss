@@ -1,7 +1,26 @@
 @use "../variables" as *;
 
 .hero {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    margin-bottom: 8%;
+    max-width: 546px;
+  }
+
+  &__heading {
+    margin: 0 0 1.25rem;
+    font-family: serif;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.55px;
+  }
+
   &__form {
+    margin-bottom: 16px;
     max-width: 445px;
     width: 100%;
     border-radius: 24px;
@@ -28,5 +47,106 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  &__form-help {
+    margin-left: 5%;
+  }
+
+  &__form-help-desc {
+    margin: 0;
+    color: $second-color;
+    font-size: 15px;
+  }
+
+  &__form-help-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: $second-color;
+  }
+
+  &__picture {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1040px) {
+  .hero {
+    &__container {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+
+    &__left {
+      margin-top: -50px;
+      text-align: center;
+    }
+
+    &__form {
+      margin: 0 auto 16px;
+    }
+
+    &__heading {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    &__picture {
+      margin: 0 -58px 0 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    &__left {
+      text-align: center;
+    }
+
+    &__heading {
+      font-size: 2rem;
+      line-height: 2.25rem;
+    }
+
+    &__picture {
+      margin: -38px -50px -28px 0;
+    }
+
+    &__img {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    &__heading {
+      margin-bottom: 24px;
+    }
+
+    &__form {
+      margin-bottom: 24px;
+      position: static;
+      box-shadow: none;
+    }
+
+    &__email {
+      margin-bottom: 16px;
+      box-shadow: 10px 10px 25px -10px #36536b40;
+    }
+
+    &__btn {
+      position: inherit;
+      width: 100%;
+    }
+
+    &__picture {
+      margin-bottom: -8px;
+    }
+
+    &__img {
+      width: 240px;
+    }
   }
 }

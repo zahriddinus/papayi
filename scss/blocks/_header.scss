@@ -14,7 +14,7 @@
   }
 
   &__container {
-    padding: 16px 12px;
+    padding: 16px 20px;
     display: flex;
     align-items: center;
   }
@@ -82,9 +82,28 @@
   }
 }
 
+@media (max-width: 1040px) {
+  .header {
+    &__main-wrapper {
+      background-image: image-set(
+        url("../../image/hero-background-tablet.png") 1x,
+        url("../../image/hero-background-tablet@2x.png") 2x
+      );
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .header {
+    &__main-wrapper {
+      background-image: image-set(
+        url("../../image/hero-background-mobile.png") 1x,
+        url("../../image/hero-background-mobile@2x.png") 2x
+      );
+    }
+
     &__container {
+      padding: 16px 12px;
       display: flex;
       align-items: center;
       justify-content: space-between;
